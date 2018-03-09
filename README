@@ -1,4 +1,6 @@
-This is a work-in-progress of a new skin for ZoneMinder version >= 1.24  .
+Fix SQL-ERR 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1', statement was 'select Id, Name, Width, Height from Monitors where Id = '
+run from ZoneMinder version >= 1.29 
+
 I plan on removing many of the extra (read: usually unused) features of the WebUI and to go with a more simplistic approach, while adding web 2.0 features.
 To use this skin, check it out into a new zm/skins directory (I.e. zm/skins/new), then browse to http://yourzm/?skin=new
 
