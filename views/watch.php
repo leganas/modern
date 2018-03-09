@@ -24,7 +24,8 @@ if ( !canView( 'Stream' ) )
     return;
 }
 
-$sql = "select C.*, M.* from Monitors as M left join Controls as C on (M.ControlId = C.Id ) where M.Id = '".dbEscape($_REQUEST['mid'])."'";
+$sql = "select C.*, M.* from Monitors as M left join Controls as C on (M.ControlId = C.Id ) where M.Id = ".dbEscape($_REQUEST['mid']);
+// $sql = "select C.*, M.* from Monitors as M left join Controls as C on (M.ControlId = C.Id ) where M.Id = '".dbEscape($_REQUEST['mid'])."'";
 $monitor = dbFetchOne( $sql );
 
 if ( isset($_REQUEST['control']) )
